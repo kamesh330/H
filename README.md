@@ -9,6 +9,7 @@
 ## 🚀 Quick Start (VS Code)
 
 ### Prerequisites
+
 - [Node.js](https://nodejs.org/) v16 or higher
 - npm (included with Node.js)
 
@@ -29,15 +30,32 @@ The app will open automatically at **http://localhost:3000**
 
 ---
 
-## 🔐 Login Credentials
+## � Demo / Screenshots
+
+Once the app is running at **http://localhost:3000**, you'll see:
+
+✅ **Login Page** — Deterministic authentication (No database required)  
+✅ **Dashboard** — Real-time KPIs, patient queue, hospital stress index  
+✅ **Patients Tab** — Patient cards with clinical deviations & risk scores  
+✅ **Hospital Tab** — Resource utilization, ER status, admission alerts  
+✅ **Data Entry** — Add/edit patient clinical data
+
+**Try logging in with:**
+
+- Hospital ID: `DEMO`
+- Password: `CAREDEMOD2026`
+
+---
+
+## �🔐 Login Credentials
 
 Authentication is fully deterministic — no database required.
 
-| Hospital ID | Password       |
-|-------------|----------------|
-| H001        | CAREH0012026   |
-| H002        | CAREH0022026   |
-| DEMO        | CAREDEMOD2026  |
+| Hospital ID | Password      |
+| ----------- | ------------- |
+| H001        | CAREH0012026  |
+| H002        | CAREH0022026  |
+| DEMO        | CAREDEMOD2026 |
 
 **Formula:** `password = "CARE" + hospital_id + "2026"`
 
@@ -90,6 +108,7 @@ carepulse-app/
 ## 🧮 Mathematical Engine Summary
 
 ### Clinical Risk Score
+
 ```
 Risk_raw = Σ(wᵢ × Deviationᵢ)   where Σwᵢ = 1.0
 
@@ -104,27 +123,30 @@ Final Score ∈ [0, 100]
 ```
 
 ### Weight Hierarchy
-| Index | Weight | Rationale |
-|-------|--------|-----------|
-| O₂ Saturation | 0.20 | Most acute life-threat |
-| Heart Rate | 0.15 | Critical cardiac indicator |
-| Blood Pressure | 0.15 | Immediate hemodynamic risk |
-| Fever | 0.10 | Infection / systemic risk |
-| Respiratory Rate | 0.10 | Respiratory compromise |
-| Blood Sugar | 0.08 | Metabolic, sub-acute |
-| Age | 0.07 | Population risk modifier |
-| BMI | 0.05 | Chronic risk |
-| Hemoglobin | 0.05 | Chronic anemia |
-| Hydration | 0.05 | Acute dehydration |
+
+| Index            | Weight | Rationale                  |
+| ---------------- | ------ | -------------------------- |
+| O₂ Saturation    | 0.20   | Most acute life-threat     |
+| Heart Rate       | 0.15   | Critical cardiac indicator |
+| Blood Pressure   | 0.15   | Immediate hemodynamic risk |
+| Fever            | 0.10   | Infection / systemic risk  |
+| Respiratory Rate | 0.10   | Respiratory compromise     |
+| Blood Sugar      | 0.08   | Metabolic, sub-acute       |
+| Age              | 0.07   | Population risk modifier   |
+| BMI              | 0.05   | Chronic risk               |
+| Hemoglobin       | 0.05   | Chronic anemia             |
+| Hydration        | 0.05   | Acute dehydration          |
 
 ### Severity Classification
+
 | Score | Severity |
-|-------|----------|
+| ----- | -------- |
 | ≥ 70  | Critical |
 | 40–69 | Moderate |
 | < 40  | Stable   |
 
 ### Hospital Stress Index
+
 ```
 Stress = 0.25×(1-Bed) + 0.30×(1-ICU) + 0.20×ER + 0.15×Op + 0.10×Vent
 
@@ -137,19 +159,19 @@ Stress = 0.25×(1-Bed) + 0.30×(1-ICU) + 0.20×ER + 0.15×Op + 0.10×Vent
 
 ## ⚙️ Features
 
-| Feature | Description |
-|---------|-------------|
-| Login Authentication | Deterministic: `password = "CARE" + hospital_id + "2026"` |
-| Risk Scoring | 10-index quadratic deviation model |
-| Severity Classification | Critical / Moderate / Stable |
-| Diet Recommendation | 6-priority rule engine → 1 diet |
-| Food Menu | 6 deterministic items per diet |
-| Room Temperature | Severity-based + fever adjustment |
-| Bed Allocation | ICU / General / Observation |
-| Hospital Stress Index | 5-factor weighted formula |
-| ER Logic | Load + stress-based admission rules |
-| Live Editing | Edit vitals → all outputs recompute instantly |
-| Explanation Log | Step-by-step computation trace per patient |
+| Feature                 | Description                                               |
+| ----------------------- | --------------------------------------------------------- |
+| Login Authentication    | Deterministic: `password = "CARE" + hospital_id + "2026"` |
+| Risk Scoring            | 10-index quadratic deviation model                        |
+| Severity Classification | Critical / Moderate / Stable                              |
+| Diet Recommendation     | 6-priority rule engine → 1 diet                           |
+| Food Menu               | 6 deterministic items per diet                            |
+| Room Temperature        | Severity-based + fever adjustment                         |
+| Bed Allocation          | ICU / General / Observation                               |
+| Hospital Stress Index   | 5-factor weighted formula                                 |
+| ER Logic                | Load + stress-based admission rules                       |
+| Live Editing            | Edit vitals → all outputs recompute instantly             |
+| Explanation Log         | Step-by-step computation trace per patient                |
 
 ---
 
