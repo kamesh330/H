@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "files.associations": { "*.jsx": "javascriptreact" },
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Default Dark Modern"
+}
