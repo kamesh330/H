@@ -30,20 +30,98 @@ The app will open automatically at **http://localhost:3000**
 
 ---
 
-## � Demo / Screenshots
+## 📺 Live Demo / Localhost Output
 
 Once the app is running at **http://localhost:3000**, you'll see:
 
-✅ **Login Page** — Deterministic authentication (No database required)  
-✅ **Dashboard** — Real-time KPIs, patient queue, hospital stress index  
-✅ **Patients Tab** — Patient cards with clinical deviations & risk scores  
-✅ **Hospital Tab** — Resource utilization, ER status, admission alerts  
-✅ **Data Entry** — Add/edit patient clinical data
+### Login Page Output
+```
+┌─────────────────────────────────────┐
+│      CarePulse++ v2.0              │
+│   Smart Patient Monitoring         │
+│                                      │
+│  Hospital ID: [DEMO________]       │
+│  Password:   [••••••••••••]         │
+│                                      │
+│         [ Login Button ]             │
+│                                      │
+│  ✓ Deterministic Authentication     │
+│  ✓ No Database Required             │
+└─────────────────────────────────────┘
+```
+
+### Dashboard Output (After Login)
+```
+Hospital: DEMO | Stress Index: 42% 🟡 | Logout
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 KEY PERFORMANCE INDICATORS
+├─ Patients at Risk: 3 (Risk Score > 50)
+├─ ER Queue: 2 pending admissions
+├─ ICU Occupancy: 60%
+├─ Avg Clinical Deviation: 35.2%
+
+⚠️ ALERTS
+├─ 🔴 HIGH: Patient P001 - Risk Score 78
+├─ 🟠 MEDIUM: Patient P003 - Risk Score 55
+└─ 🟡 LOW: Monitor Patient P002
+
+👥 PATIENT QUEUE
+├─ P001 | Clinical Risk: 78% | Status: ICU
+├─ P002 | Clinical Risk: 42% | Status: Ward
+└─ P003 | Clinical Risk: 55% | Status: ER
+```
+
+### Patients Tab Output
+```
+PATIENT CARDS (with deviations & food menu):
+
+┌──────────────────────────────────┐
+│ Patient: P001                     │
+│ Clinical Risk Score: 78           │
+│ ────────────────────────────────│
+│ Heart Rate Deviation: 23%        │
+│ Blood Pressure Deviation: 15%    │
+│ Temperature Deviation: 8%        │
+│ ────────────────────────────────│
+│ 📋 Diet: Liquid                   │
+│ 🍲 Foods: Soup, Juice, Broth    │
+│                                   │
+│ Edit Data │ Toggle Menu          │
+└──────────────────────────────────┘
+```
+
+### Hospital Tab Output
+```
+HOSPITAL RESOURCE STATUS:
+
+Stress Index: 42%  ▓▓▓░░░░░░░░  MODERATE
+
+Resource Allocation:
+├─ Total Beds: 50
+├─ Occupied: 30 (60%)
+├─ ICU: 8/10
+├─ ER: 2 pending
+├─ Nurse-to-Patient Ratio: 1:6
+
+Alerts:
+🔴 ER Queue > 1: Admission alert active
+🟡 ICU approaching 80% capacity
+```
+
+### Sample Features Demonstrated
+✅ **Login Page** — Deterministic auth, no database  
+✅ **Dashboard** — Real-time KPIs & alerts  
+✅ **Patient Cards** — Risk scores & food menus  
+✅ **Hospital Status** — Resource utilization  
+✅ **Data Entry** — Add/edit patient data  
+✅ **Dynamic Calculations** — All computed in real-time
 
 **Try logging in with:**
-
 - Hospital ID: `DEMO`
 - Password: `CAREDEMOD2026`
+- Or any `H###` format (H001, H002, etc.) with password: `CAREH###2026`
 
 ---
 
