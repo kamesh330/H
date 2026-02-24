@@ -30,42 +30,7 @@ The app will open automatically at **http://localhost:3000**
 
 ---
 
-## 🌐 Live Deployment (Netlify)
 
-**Your app is ready to deploy!** Follow these steps:
-
-1. Go to [netlify.com](https://netlify.com) and sign up (free)
-2. Click **"New site from Git"**
-3. Connect your GitHub repo: `kamesh330/H`
-4. Netlify will auto-detect the build settings from `netlify.toml`
-5. Click **Deploy**
-
-Your live app will be available at a URL like: `https://your-app-name.netlify.app`
-
-✅ Once deployed, your GitHub README will link to the live app!
-
----
-
-## 📺 Live Demo / Localhost Output
-
-Once the app is running at **http://localhost:3000**, you'll see:
-
-### Login Page Output
-
-```
-┌─────────────────────────────────────┐
-│      CarePulse++ v2.0              │
-│   Smart Patient Monitoring         │
-│                                      │
-│  Hospital ID: [DEMO________]       │
-│  Password:   [••••••••••••]         │
-│                                      │
-│         [ Login Button ]             │
-│                                      │
-│  ✓ Deterministic Authentication     │
-│  ✓ No Database Required             │
-└─────────────────────────────────────┘
-```
 
 ### Dashboard Output (After Login)
 
